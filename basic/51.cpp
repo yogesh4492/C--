@@ -1,0 +1,14 @@
+#include<iostream>
+#include<fstream>
+using namespace std;
+int main(){
+	string data;
+	fstream file;
+	file.open("C:\\Users\\patel\\OneDrive\\Desktop\\1.txt",ios::out);
+	cout<<"Enter the data= ";
+	getline(cin,data);
+	file<<data;
+	file.close();
+	
+	return 0;
+}
